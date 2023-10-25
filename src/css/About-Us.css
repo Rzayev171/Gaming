@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    list-style: none;
+    vertical-align: baseline;
+}
+
+
+.header1 {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(52, 0, 110, 0.615);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0);
+    padding: 25px 100px;
+    transition: 0.6s;
+}
+
+.header1  ul {
+  list-style: none;
+}
+.header1  > ul > li {
+  width: 10em;
+  float: left;
+}
+.header1  > ul > li ul {
+  list-style: none;
+  position: absolute;
+  left: -9999em;
+}
+.header1 > ul > li ul a {
+  background: rgb(216, 0, 0), 255;
+  border-radius: 3px;
+
+}
+.header1  > ul > li ul a:hover, #nav > ul > li ul a:focus {
+  background: #dfdfdf;
+}
+.header1  > ul > li:hover ul, #nav > ul > li.hover ul {
+  left: auto;
+  padding: 0;
+  margin: 0;
+}
+.header1  > ul > li:hover > a, #nav > ul > li.hover > a {
+  background: #00000000;
+}
+.header1   ul a {
+  display: block;
+  width: 10em;
+  height: 3em;
+  text-decoration: none;
+  text-align: center;
+  background:  rgba(52, 0, 110, 0.615);
+  color: rgb(255, 248, 248);
+  padding-top: 1em;
+  
+}
+
+
+
+.header1 a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header1 a:hover{
+    color: blueviolet;
+    transition: 0.3s;
+}
+
+.header1 .logo {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.common-banner-section {
+    padding: 70px 0;
+    background: black;
+    color: white;
+    background-position: 50% 50%;
+    position: relative;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 1200px;
+    margin: 62px auto;
+    padding: 0 15px;
+}
+
+.section-title b, .common-banner-content .section-title h2, .contact-right-inner h2, .blog-grid-section .section-title h2 {
+    background: rgb(2,202,255);
+    background: linear-gradient(90deg, rgba(2,202,255,1) 0%, rgba(48,8,196,1) 66%, rgba(45,20,200,1) 69%, rgba(216,0,200,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.common-banner-content .back-btn {
+    margin-bottom: 26px;
+}
+a, a:hover, a:focus, a:active, button, button:hover, button:focus, input, input:hover, input:focus, select, select:hover, select:focus, textarea, textarea:hover, textarea:focus, .btn, .btn:hover, .btn:focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    font-family: var(--first-font);
+}
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+a, .btn, button {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+    -ms-transition: all ease-in-out .3s;
+    -o-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+}
+
+.padding-bottom, body.product .home-product-extra {
+    padding-bottom: 70px;
+}
+
+.padding-top {
+    padding-top: 0px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+.site-footer {
+    position: relative;
+    z-index: 1;
+    padding: 70px 0 60px;
+    background: rgba(0,0,0,1);
+    color: var(--white);
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}

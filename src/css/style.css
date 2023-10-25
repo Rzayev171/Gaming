@@ -13,20 +13,55 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(237, 6, 6, 0);
-    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    background-color: rgba(52, 0, 110, 0.615);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0);
     padding: 25px 100px;
     transition: 0.6s;
+}
+
+.header1  ul {
+  list-style: none;
+}
+.header1  > ul > li {
+  width: 10em;
+  float: left;
+}
+.header1  > ul > li ul {
+  list-style: none;
+  position: absolute;
+  left: -9999em;
+}
+.header1 > ul > li ul a {
+  background: rgb(77, 0, 140), 255;
+  border-radius: 3px;
+
+}
+.header1  > ul > li ul a:hover, #nav > ul > li ul a:focus {
+  background: #ffffff;
+}
+.header1  > ul > li:hover ul, #nav > ul > li.hover ul {
+  left: auto;
+  padding: 0;
+  margin: 0;
+}
+.header1  > ul > li:hover > a, #nav > ul > li.hover > a {
+  background: #00000000;
+}
+.header1   ul a {
+  display: block;
+  width: 10em;
+  height: 3em;
+  text-decoration: none;
+  text-align: center;
+  background:  rgba(52, 0, 110, 0.615);
+  color: rgb(255, 255, 255);
+  padding-top: 1em;
+  
 }
 
 
 
 .header1 a {
-    color: aliceblue;
-    font-size: 1em;
-    text-decoration:none ;
-    margin: 20px;
-    padding: 25px 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -44,7 +79,7 @@
 
 .currency select {
     color: white;
-    border: 1px solid white;
+    border: 1px solid rgb(248, 248, 248);
     padding: 7px 30px 7px 12px;
     border-radius: 0 16px;
     line-height: 1;
@@ -610,6 +645,7 @@ background: linear-gradient(90deg, rgba(2,202,255,1) 0%, rgba(48,8,196,1) 66%, r
 
 
 .container {
+  display: flex;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -639,7 +675,8 @@ background: linear-gradient(90deg, rgba(2,202,255,1) 0%, rgba(48,8,196,1) 66%, r
 }
 
 .cat-tab li a {
-  padding: 10px 33px;
+  list-style-type: none;
+  padding: 5px 100px;
   font-size: 12px;
   display: inline-flex;
   width: 100%;
@@ -680,4 +717,255 @@ background: linear-gradient(90deg, rgba(2,202,255,1) 0%, rgba(48,8,196,1) 66%, r
   list-style: none;
   padding: 0;
   z-index: 1;
+}
+
+
+
+.shopping-cart-list{
+  float: right;
+  position: absolute;
+  width: 25rem;
+  right: -0.75rem;
+  top: 2.9rem;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.shopping-cart-list .list-item{
+  margin-top: 1rem;
+}
+
+
+.full-width-section {
+  background: rgba(0,0,0,1);
+  position: relative;
+  z-index: 1;
+}
+
+
+.full-width-section .product-card-inner {
+  border: 0;
+  padding: 15px 30px;
+}
+.product-card-inner {
+  padding: 15px;
+  position: relative;
+  background: linear-gradient(148deg,rgba(1,152,255,.18) 0%,rgba(0,0,0,0) 100%);
+  transition: all ease-in-out .5s;
+  -webkit-transition: all ease-in-out .5s;
+  -moz-transition: all ease-in-out .5s;
+  -ms-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  width: 100%;
+  border-radius: 0 12px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us-box {
+  position: relative;
+  z-index: 1;
+  padding: 25px 15px;
+  border-radius: 0 15px;
+  -webkit-border-radius: 0px 15px 0px 15px;
+  -moz-border-radius: 0px 15px 0px 15px;
+  -ms-border-radius: 0px 15px 0px 15px;
+  -o-border-radius: 0px 15px 0px 15px;
+}
+
+.site-footer {
+  position: relative;
+  z-index: 1;
+  padding: 70px 0 60px;
+ 
+  color: var(--white);
+}
+
+.footer-ring-1 {
+  position: absolute;
+  z-index: -1;
+  top: 0%;
+  right: 0%;
+}
+
+.footer-ring-2 {
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  bottom: 0%;
+}
+
+.footer-col {
+  width: 100%;
+  flex: 1;
+  padding-left: 96px;
+}
+
+
+.site-footer
+{
+  background-color:#000000;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#ffffff;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#ffffff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#ffffff
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#000000;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#ffffff;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#000000;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
